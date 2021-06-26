@@ -347,19 +347,6 @@ Nucleo_64.menu.pnum.NUCLEO_G071RB.build.variant=STM32G0xx/G071R(6-8)T_G071RB(I-T
 Nucleo_64.menu.pnum.NUCLEO_G071RB.build.cmsis_lib_gcc=arm_cortexM0l_math
 Nucleo_64.menu.pnum.NUCLEO_G071RB.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} -D__CORTEX_SC=0
 
-# NUCLEO_G0B1RE board
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE=Nucleo G0B1RE
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.node=NOD_G0B1RE
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.upload.maximum_size=262144
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.upload.maximum_data_size=147456
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.mcu=cortex-m0plus
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.board=NUCLEO_G0B1RE
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.series=STM32G0xx
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.product_line=STM32G0B1xx
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.cmsis_lib_gcc=arm_cortexM0l_math
-Nucleo_64.menu.pnum.NUCLEO_G0B1RE.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} -D__CORTEX_SC=0
-
 # NUCLEO_G431RB board
 Nucleo_64.menu.pnum.NUCLEO_G431RB=Nucleo G431RB
 Nucleo_64.menu.pnum.NUCLEO_G431RB.node="NODE_G431RB,NOD_G431RB"
@@ -385,19 +372,6 @@ Nucleo_64.menu.pnum.NUCLEO_G474RE.build.series=STM32G4xx
 Nucleo_64.menu.pnum.NUCLEO_G474RE.build.product_line=STM32G474xx
 Nucleo_64.menu.pnum.NUCLEO_G474RE.build.variant=STM32G4xx/G473R(B-C-E)T_G474R(B-C-E)T_G483RET_G484RET
 Nucleo_64.menu.pnum.NUCLEO_G474RE.build.cmsis_lib_gcc=arm_cortexM4lf_math
-
-# NUCLEO_L010RB board
-Nucleo_64.menu.pnum.NUCLEO_L010RB=Nucleo L010RB
-Nucleo_64.menu.pnum.NUCLEO_L010RB.node=NODE_L010RB
-Nucleo_64.menu.pnum.NUCLEO_L010RB.upload.maximum_size=131072
-Nucleo_64.menu.pnum.NUCLEO_L010RB.upload.maximum_data_size=20480
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.mcu=cortex-m0plus
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.board=NUCLEO_L010RB
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.series=STM32L0xx
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.product_line=STM32L010xB
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.variant=STM32L0xx/L010RBT
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.cmsis_lib_gcc=arm_cortexM0l_math
-Nucleo_64.menu.pnum.NUCLEO_L010RB.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} -D__CORTEX_SC=0
 
 # NUCLEO_L053R8 board
 Nucleo_64.menu.pnum.NUCLEO_L053R8=Nucleo L053R8
@@ -1852,6 +1826,15 @@ GenF3.build.flags.fp=-mfpu=fpv4-sp-d16 -mfloat-abi=hard
 GenF3.build.series=STM32F3xx
 GenF3.build.cmsis_lib_gcc=arm_cortexM4lf_math
 
+# KB_CHEM_F303RC
+GenF3.menu.pnum.KB_CHEM_F303RC=KB-CHEM-F303RC
+GenF3.menu.pnum.KB_CHEM_F303RC.upload.maximum_size=262144
+GenF3.menu.pnum.KB_CHEM_F303RC.upload.maximum_data_size=40960
+GenF3.menu.pnum.KB_CHEM_F303RC.build.board=KB_CHEM_F303RC
+GenF3.menu.pnum.KB_CHEM_F303RC.build.product_line=STM32F303xC
+GenF3.menu.pnum.KB_CHEM_F303RC.build.variant_h=variant_{build.board}.h
+GenF3.menu.pnum.KB_CHEM_F303RC.build.variant=STM32F3xx/F303R(B-C)T
+
 # BLACKPILL_F303CC
 GenF3.menu.pnum.BLACKPILL_F303CC=RobotDyn BlackPill F303CC
 GenF3.menu.pnum.BLACKPILL_F303CC.upload.maximum_size=262144
@@ -3273,46 +3256,6 @@ GenG0.menu.pnum.GENERIC_G081RBTX.upload.maximum_data_size=36864
 GenG0.menu.pnum.GENERIC_G081RBTX.build.board=GENERIC_G081RBTX
 GenG0.menu.pnum.GENERIC_G081RBTX.build.product_line=STM32G081xx
 GenG0.menu.pnum.GENERIC_G081RBTX.build.variant=STM32G0xx/G071R(6-8)T_G071RB(I-T)_G081RB(I-T)
-
-# Generic G0B1RBTx
-GenG0.menu.pnum.GENERIC_G0B1RBTX=Generic G0B1RBTx
-GenG0.menu.pnum.GENERIC_G0B1RBTX.upload.maximum_size=131072
-GenG0.menu.pnum.GENERIC_G0B1RBTX.upload.maximum_data_size=147456
-GenG0.menu.pnum.GENERIC_G0B1RBTX.build.board=GENERIC_G0B1RBTX
-GenG0.menu.pnum.GENERIC_G0B1RBTX.build.product_line=STM32G0B1xx
-GenG0.menu.pnum.GENERIC_G0B1RBTX.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
-
-# Generic G0B1RCTx
-GenG0.menu.pnum.GENERIC_G0B1RCTX=Generic G0B1RCTx
-GenG0.menu.pnum.GENERIC_G0B1RCTX.upload.maximum_size=262144
-GenG0.menu.pnum.GENERIC_G0B1RCTX.upload.maximum_data_size=147456
-GenG0.menu.pnum.GENERIC_G0B1RCTX.build.board=GENERIC_G0B1RCTX
-GenG0.menu.pnum.GENERIC_G0B1RCTX.build.product_line=STM32G0B1xx
-GenG0.menu.pnum.GENERIC_G0B1RCTX.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
-
-# Generic G0B1RETx
-GenG0.menu.pnum.GENERIC_G0B1RETX=Generic G0B1RETx
-GenG0.menu.pnum.GENERIC_G0B1RETX.upload.maximum_size=524288
-GenG0.menu.pnum.GENERIC_G0B1RETX.upload.maximum_data_size=147456
-GenG0.menu.pnum.GENERIC_G0B1RETX.build.board=GENERIC_G0B1RETX
-GenG0.menu.pnum.GENERIC_G0B1RETX.build.product_line=STM32G0B1xx
-GenG0.menu.pnum.GENERIC_G0B1RETX.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
-
-# Generic G0C1RCTx
-GenG0.menu.pnum.GENERIC_G0C1RCTX=Generic G0C1RCTx
-GenG0.menu.pnum.GENERIC_G0C1RCTX.upload.maximum_size=262144
-GenG0.menu.pnum.GENERIC_G0C1RCTX.upload.maximum_data_size=147456
-GenG0.menu.pnum.GENERIC_G0C1RCTX.build.board=GENERIC_G0C1RCTX
-GenG0.menu.pnum.GENERIC_G0C1RCTX.build.product_line=STM32G0C1xx
-GenG0.menu.pnum.GENERIC_G0C1RCTX.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
-
-# Generic G0C1RETx
-GenG0.menu.pnum.GENERIC_G0C1RETX=Generic G0C1RETx
-GenG0.menu.pnum.GENERIC_G0C1RETX.upload.maximum_size=524288
-GenG0.menu.pnum.GENERIC_G0C1RETX.upload.maximum_data_size=147456
-GenG0.menu.pnum.GENERIC_G0C1RETX.build.board=GENERIC_G0C1RETX
-GenG0.menu.pnum.GENERIC_G0C1RETX.build.product_line=STM32G0C1xx
-GenG0.menu.pnum.GENERIC_G0C1RETX.build.variant=STM32G0xx/G0B1R(B-C-E)T_G0C1R(C-E)T
 
 # Upload menu
 GenG0.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
@@ -4997,18 +4940,6 @@ ESC_board.menu.pnum.WRAITH32_V1.build.variant=STM32F0xx/F051K(6-8)U
 ESC_board.menu.pnum.WRAITH32_V1.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
 ESC_board.menu.pnum.WRAITH32_V1.build.cmsis_lib_gcc=arm_cortexM0l_math
 
-# STORM32_V1_RC board
-ESC_board.menu.pnum.STORM32_V1_31_RC=STorM32 BGC v1.31 RC
-ESC_board.menu.pnum.STORM32_V1_31_RC.upload.maximum_size=262144
-ESC_board.menu.pnum.STORM32_V1_31_RC.upload.maximum_data_size=49152
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.mcu=cortex-m3
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.board=STORM32_V1_31_RC
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.series=STM32F1xx
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.product_line=STM32F103xE
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.cmsis_lib_gcc=arm_cortexM3l_math
-ESC_board.menu.pnum.STORM32_V1_31_RC.build.variant=STM32F1xx/F103R(C-D-E)T
-
 # Upload menu
 ESC_board.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
 ESC_board.menu.upload_method.swdMethod.upload.protocol=0
@@ -5397,40 +5328,6 @@ GenFlight.menu.upload_method.dfuoMethod.build.flash_offset=0x5000
 GenFlight.menu.upload_method.dfuoMethod.build.bootloader_flags=-DBL_LEGACY_LEAF -DVECT_TAB_OFFSET={build.flash_offset}
 
 ################################################################################
-# elecgator boards
-
-elecgator.name=elecgator boards
-
-elecgator.build.core=arduino
-elecgator.build.board=elecgator
-elecgator.build.variant_h=variant_{build.board}.h
-elecgator.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
-
-# EtherCATduino board
-elecgator.menu.pnum.ETHERCAT_DUINO=EtherCATduino
-elecgator.menu.pnum.ETHERCAT_DUINO.upload.maximum_size=524288
-elecgator.menu.pnum.ETHERCAT_DUINO.upload.maximum_data_size=327680
-elecgator.menu.pnum.ETHERCAT_DUINO.build.mcu=cortex-m7
-elecgator.menu.pnum.ETHERCAT_DUINO.build.flags.fp=-mfpu=fpv4-sp-d16 -mfloat-abi=hard
-elecgator.menu.pnum.ETHERCAT_DUINO.build.board=ETHERCAT_DUINO
-elecgator.menu.pnum.ETHERCAT_DUINO.build.series=STM32F7xx
-elecgator.menu.pnum.ETHERCAT_DUINO.build.product_line=STM32F746xx
-elecgator.menu.pnum.ETHERCAT_DUINO.build.variant=STM32F7xx/F745Z(E-G)T_F746Z(E-G)(T-Y)_F750Z8T_F756ZG(T-Y)
-elecgator.menu.pnum.ETHERCAT_DUINO.build.cmsis_lib_gcc=arm_cortexM7lfsp_math
-elecgator.menu.pnum.ETHERCAT_DUINO.build.peripheral_pins=-DCUSTOM_PERIPHERAL_PINS
-
-# Upload menu
-elecgator.menu.upload_method.swdMethod=STM32CubeProgrammer (SWD)
-elecgator.menu.upload_method.swdMethod.upload.protocol=0
-elecgator.menu.upload_method.swdMethod.upload.options=-g
-elecgator.menu.upload_method.swdMethod.upload.tool=stm32CubeProg
-
-elecgator.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
-elecgator.menu.upload_method.dfuMethod.upload.protocol=2
-elecgator.menu.upload_method.dfuMethod.upload.options=-g
-elecgator.menu.upload_method.dfuMethod.upload.tool=stm32CubeProg
-
-################################################################################
 # Garatronic-McHobby STM32 boards
 
 Garatronic.name=Garatronic-McHobby
@@ -5694,12 +5591,6 @@ GenFlight.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_N
 GenFlight.menu.xserial.disabled=Disabled (no Serial support)
 GenFlight.menu.xserial.disabled.build.xSerial=
 
-elecgator.menu.xserial.generic=Enabled (generic 'Serial')
-elecgator.menu.xserial.none=Enabled (no generic 'Serial')
-elecgator.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
-elecgator.menu.xserial.disabled=Disabled (no Serial support)
-elecgator.menu.xserial.disabled.build.xSerial=
-
 Garatronic.menu.xserial.generic=Enabled (generic 'Serial')
 Garatronic.menu.xserial.none=Enabled (no generic 'Serial')
 Garatronic.menu.xserial.none.build.xSerial=-DHAL_UART_MODULE_ENABLED -DHWSERIAL_NONE
@@ -5864,14 +5755,6 @@ GenG4.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
 GenG4.menu.xusb.HSFS=High Speed in Full Speed mode
 GenG4.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
 
-GenG0.menu.usb.none=None
-GenG0.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
-GenG0.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
-GenG0.menu.usb.CDC=CDC (no generic 'Serial')
-GenG0.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
-GenG0.menu.usb.HID=HID (keyboard and mouse)
-GenG0.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
-
 GenH7.menu.usb.none=None
 GenH7.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
 GenH7.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
@@ -5962,19 +5845,6 @@ GenFlight.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
 GenFlight.menu.xusb.HSFS=High Speed in Full Speed mode
 GenFlight.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
 
-elecgator.menu.usb.none=None
-elecgator.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
-elecgator.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
-elecgator.menu.usb.CDC=CDC (no generic 'Serial')
-elecgator.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
-elecgator.menu.usb.HID=HID (keyboard and mouse)
-elecgator.menu.usb.HID.build.enable_usb={build.usb_flags} -DUSBD_USE_HID_COMPOSITE
-elecgator.menu.xusb.FS=Low/Full Speed
-elecgator.menu.xusb.HS=High Speed
-elecgator.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
-elecgator.menu.xusb.HSFS=High Speed in Full Speed mode
-elecgator.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
-
 Garatronic.menu.usb.none=None
 Garatronic.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
 Garatronic.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
@@ -5995,17 +5865,6 @@ Midatronics.menu.xusb.HS=High Speed
 Midatronics.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
 Midatronics.menu.xusb.HSFS=High Speed in Full Speed mode
 Midatronics.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
-
-ESC_board.menu.usb.none=None
-ESC_board.menu.usb.CDCgen=CDC (generic 'Serial' supersede U(S)ART)
-ESC_board.menu.usb.CDCgen.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
-ESC_board.menu.usb.CDC=CDC (no generic 'Serial')
-ESC_board.menu.usb.CDC.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC -DDISABLE_GENERIC_SERIALUSB
-ESC_board.menu.xusb.FS=Low/Full Speed
-ESC_board.menu.xusb.HS=High Speed
-ESC_board.menu.xusb.HS.build.usb_speed=-DUSE_USB_HS
-ESC_board.menu.xusb.HSFS=High Speed in Full Speed mode
-ESC_board.menu.xusb.HSFS.build.usb_speed=-DUSE_USB_HS -DUSE_USB_HS_IN_FS
 
 # Optimizations
 Nucleo_144.menu.opt.osstd=Smallest (-Os default)
@@ -6448,25 +6307,6 @@ GenFlight.menu.opt.o3lto.build.flags.optimize=-O3 -flto
 GenFlight.menu.opt.ogstd=Debug (-g)
 GenFlight.menu.opt.ogstd.build.flags.optimize=-g -Og
 
-elecgator.menu.opt.osstd=Smallest (-Os default)
-elecgator.menu.opt.osstd.build.flags.optimize=-Os
-elecgator.menu.opt.oslto=Smallest (-Os) with LTO
-elecgator.menu.opt.oslto.build.flags.optimize=-Os -flto
-elecgator.menu.opt.o1std=Fast (-O1)
-elecgator.menu.opt.o1std.build.flags.optimize=-O1
-elecgator.menu.opt.o1lto=Fast (-O1) with LTO
-elecgator.menu.opt.o1lto.build.flags.optimize=-O1 -flto
-elecgator.menu.opt.o2std=Faster (-O2)
-elecgator.menu.opt.o2std.build.flags.optimize=-O2
-elecgator.menu.opt.o2lto=Faster (-O2) with LTO
-elecgator.menu.opt.o2lto.build.flags.optimize=-O2 -flto
-elecgator.menu.opt.o3std=Fastest (-O3)
-elecgator.menu.opt.o3std.build.flags.optimize=-O3
-elecgator.menu.opt.o3lto=Fastest (-O3) with LTO
-elecgator.menu.opt.o3lto.build.flags.optimize=-O3 -flto
-elecgator.menu.opt.ogstd=Debug (-g)
-elecgator.menu.opt.ogstd.build.flags.optimize=-g -Og
-
 Garatronic.menu.opt.osstd=Smallest (-Os default)
 Garatronic.menu.opt.oslto=Smallest (-Os) with LTO
 Garatronic.menu.opt.oslto.build.flags.optimize=-Os -flto
@@ -6743,16 +6583,6 @@ GenFlight.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
 GenFlight.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
 GenFlight.menu.rtlib.full=Newlib Standard
 GenFlight.menu.rtlib.full.build.flags.ldspecs=
-
-elecgator.menu.rtlib.nano=Newlib Nano (default)
-elecgator.menu.rtlib.nanofp=Newlib Nano + Float Printf
-elecgator.menu.rtlib.nanofp.build.flags.ldspecs=--specs=nano.specs -u _printf_float
-elecgator.menu.rtlib.nanofs=Newlib Nano + Float Scanf
-elecgator.menu.rtlib.nanofs.build.flags.ldspecs=--specs=nano.specs -u _scanf_float
-elecgator.menu.rtlib.nanofps=Newlib Nano + Float Printf/Scanf
-elecgator.menu.rtlib.nanofps.build.flags.ldspecs=--specs=nano.specs -u _printf_float -u _scanf_float
-elecgator.menu.rtlib.full=Newlib Standard
-elecgator.menu.rtlib.full.build.flags.ldspecs=
 
 Garatronic.menu.rtlib.nano=Newlib Nano (default)
 Garatronic.menu.rtlib.nanofp=Newlib Nano + Float Printf
